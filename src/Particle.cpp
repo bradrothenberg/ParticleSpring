@@ -8,14 +8,20 @@ mPosition(position), mRadius(radius), mMass(mass), mDrag(drag){
 }
 
 void Particle::update(){
+	if (!mIsFixed){
 	auto temp = mPosition;
 	auto vel = (mPosition - mPrevPostion)*mDrag;
 	mPosition += vel + mForces / mMass;
 	mPrevPostion = temp;
 
 	mForces = ci::Vec2f::zero();
+	}
 }
-
+void Particle::addVelocity(const ci::Vec2f& vec){ 
+	if (!mIsFixed){
+		mPosition += vec;
+	}
+}
 void Particle::draw()const{
 	ci::gl::drawSolidCircle(mPosition, mRadius);
 }
