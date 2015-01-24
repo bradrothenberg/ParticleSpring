@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{4ADD85CC-0628-44E3-ABCE-C2C3A26CBDBF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus">
+      <UniqueIdentifier>{1DEFBDB7-2E5C-4495-B585-D9E7E6DF6B01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src">
+      <UniqueIdentifier>{C3CAB31D-3EBA-491D-8331-3696B6356910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh">
+      <UniqueIdentifier>{86F0A2DA-AE45-494D-AFC5-123ACC14664B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core">
+      <UniqueIdentifier>{4771F2CE-F03A-477F-AF7D-E6F682FDFE2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\Geometry">
+      <UniqueIdentifier>{E2CD9503-04BA-406F-9376-04FF6FA3E8EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\IO">
+      <UniqueIdentifier>{AA57BF43-4888-4E27-B10E-0A90F59B31CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\IO\exporter">
+      <UniqueIdentifier>{F978F05E-4165-4008-BCAC-A349F4B31241}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\IO\importer">
+      <UniqueIdentifier>{EA2473A3-43E9-43F7-8293-EC3C12D77DF9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\IO\reader">
+      <UniqueIdentifier>{9DE3BDDC-8D89-4041-8F10-BE571022C8CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\IO\writer">
+      <UniqueIdentifier>{BD6112C3-FE17-4519-A1DD-1469699E7346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\Mesh">
+      <UniqueIdentifier>{B749C38F-0D68-49F9-AF3F-BF4A313366F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\Mesh\gen">
+      <UniqueIdentifier>{08E28867-D9BA-4BD9-9E7B-7F37B0F0161B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\System">
+      <UniqueIdentifier>{9A65F73E-09E5-4A39-801D-5538A5B72B9A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Core\Utils">
+      <UniqueIdentifier>{4687D444-8194-461A-838D-03AA12FE31B7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools">
+      <UniqueIdentifier>{AD199D23-E8EE-405C-9033-18B52C904291}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools\Decimater">
+      <UniqueIdentifier>{66648FAE-3FBC-4C3A-928D-D8E329BC3623}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools\Dualizer">
+      <UniqueIdentifier>{8B1CF8BF-84FD-4070-B922-1D94A5670F50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools\Smoother">
+      <UniqueIdentifier>{8C2E5807-3697-4BB8-9AAC-423701F854D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools\Subdivider">
+      <UniqueIdentifier>{4AC08763-AE77-41E9-A021-9CDB13010610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive">
+      <UniqueIdentifier>{243459AC-6030-4547-965A-59E0C7D6E1CA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite">
+      <UniqueIdentifier>{3ED39CC3-86F3-474D-BF32-CF00017587C9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform">
+      <UniqueIdentifier>{70B5F1CD-0607-4465-B888-368C6E872AA3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite">
+      <UniqueIdentifier>{BFF02050-2534-48A5-80C1-EC1552DFD129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\OpenMesh\Tools\Utils">
+      <UniqueIdentifier>{54081CFF-A750-4CD8-B2F8-0E074A56514D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Icarus\src\Icarus">
+      <UniqueIdentifier>{85531BC1-3E88-435A-86CD-B6A510857850}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\ParticleSpringApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ParticleSpringApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\NormalConeT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Geometry</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\Config.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\LoopSchemeMaskT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\MathDefs.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\NormalConeT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\Plane3d.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\QuadricT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\VectorT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\VectorT_inc.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Geometry</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\BinaryHelper.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\IOManager.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\OMFormat.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\OMFormatT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\BinaryHelper.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\IOInstances.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\IOManager.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\MeshIO.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\OFFFormat.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\OMFormat.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\Options.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_binary.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_binary_spec.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_rbo.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_store.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_types.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\StoreRestore.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\exporter\BaseExporter.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\exporter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\exporter\ExporterT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\exporter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\importer\BaseImporter.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\importer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\importer\ImporterT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\importer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\BaseReader.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OBJReader.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OFFReader.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OMReader.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\PLYReader.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\STLReader.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\BaseReader.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OBJReader.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OFFReader.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OMReader.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\PLYReader.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\STLReader.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\reader</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\BaseWriter.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OBJWriter.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OFFWriter.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OMWriter.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\PLYWriter.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\STLWriter.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\VTKWriter.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\BaseWriter.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OBJWriter.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OFFWriter.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OMWriter.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\PLYWriter.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\STLWriter.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\VTKWriter.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\IO\writer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\ArrayKernel.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\ArrayKernelT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\BaseKernel.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyConnectivity.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyMeshT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriConnectivity.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriMeshT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\ArrayItems.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\ArrayKernel.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\AttribKernelT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Attributes.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\BaseKernel.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\BaseMesh.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Casts.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\CirculatorsT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\FinalMeshItemsT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Handles.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\IteratorsT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyConnectivity.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyMesh_ArrayKernelT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyMeshT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Status.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Traits.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriConnectivity.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriMesh_ArrayKernelT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriMeshT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\circulators_header.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\circulators_template.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\footer.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\iterators_header.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh\gen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\iterators_template.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Mesh\gen</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\omstream.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\System</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\compiler.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\config.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\mostream.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\omstream.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\OpenMeshDLLMacros.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\System</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\BaseProperty.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\Endian.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\RandomNumberGenerator.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\SingletonT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\AutoPropertyHandleT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\BaseProperty.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\color_cast.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\Endian.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\GenProg.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\Noncopyable.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\Property.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\PropertyContainer.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\PropertyManager.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\RandomNumberGenerator.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\SingletonT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\vector_cast.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\vector_traits.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Core\Utils</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\BaseDecimaterT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\DecimaterT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\McDecimaterT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\MixedDecimaterT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModAspectRatioT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModEdgeLengthT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModHausdorffT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModProgMeshT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModQuadricT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\BaseDecimaterT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\CollapseInfoT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\DecimaterT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\McDecimaterT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\MixedDecimaterT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModAspectRatioT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModBaseT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModEdgeLengthT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModHausdorffT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModIndependentSetsT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModNormalDeviationT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModNormalFlippingT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModProgMeshT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModQuadricT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModRoundnessT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Decimater</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Dualizer\meshDualT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Dualizer</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\JacobiLaplaceSmootherT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Smoother</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\LaplaceSmootherT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Smoother</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\SmootherT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Smoother</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\JacobiLaplaceSmootherT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Smoother</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\LaplaceSmootherT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Smoother</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\smooth_mesh.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Smoother</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\SmootherT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Smoother</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\CompositeT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\RulesT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\CompositeT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\CompositeTraits.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\RuleInterfaceT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\RulesT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\Traits.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\CatmullClarkT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\CatmullClarkT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\CompositeLoopT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\CompositeSqrt3T.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\LongestEdgeT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\LoopT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\ModifiedButterFlyT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Sqrt3InterpolatingSubdividerLabsikGreinerT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Sqrt3T.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\SubdividerT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite\CompositeT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite\CompositeT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite\CompositeTraits.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\conio.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Gnuplot.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\MeshCheckerT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\StripifierT.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Timer.cc">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Config.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\conio.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\GLConstAsString.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Gnuplot.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\HeapT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\MeshCheckerT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\NumLimitsT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\StripifierT.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\TestingFramework.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Timer.hh">
+      <Filter>Blocks\Icarus\src\OpenMesh\Tools\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTManifoldAssistant.h">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTOpenMesh.h">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTSDFunction.h">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTSideView.h">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTUtils.h">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTViewport.h">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTViewportManager.h">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTManifoldAssistant.cpp">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTOpenMesh.cpp">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTSDFunction.cpp">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTSideView.cpp">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTUtils.cpp">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTViewport.cpp">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTViewportManager.cpp">
+      <Filter>Blocks\Icarus\src\Icarus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Particle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ParticleSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Spring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Particle.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ParticleSystem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Spring.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

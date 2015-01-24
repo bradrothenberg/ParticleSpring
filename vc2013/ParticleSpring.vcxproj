@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{26B715F9-4F4B-4677-8607-1D1ED58332B1}</ProjectGuid>
+    <RootNamespace>ParticleSpring</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\Cinder\include";"..\..\..\Cinder\boost";..\..\..\Cinder\blocks\Icarus\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset)_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\Cinder\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\Cinder\include";"..\..\..\Cinder\boost";..\..\..\Cinder\blocks\Icarus\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset)_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\Cinder\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\Cinder\include";"..\..\..\Cinder\boost";..\..\..\Cinder\blocks\Icarus\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\Cinder\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\Cinder\include";"..\..\..\Cinder\boost";..\..\..\Cinder\blocks\Icarus\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\Cinder\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder-$(PlatformToolset).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\Cinder\lib\msw\$(PlatformTarget)"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>
+      </EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\Particle.cpp" />
+    <ClCompile Include="..\src\ParticleSpringApp.cpp" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\NormalConeT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\BinaryHelper.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\IOManager.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\OMFormat.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\OMFormatT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\BaseReader.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OBJReader.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OFFReader.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OMReader.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\PLYReader.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\STLReader.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\BaseWriter.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OBJWriter.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OFFWriter.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OMWriter.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\PLYWriter.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\STLWriter.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\VTKWriter.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\ArrayKernel.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\ArrayKernelT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\BaseKernel.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyConnectivity.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyMeshT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriConnectivity.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriMeshT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\omstream.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\BaseProperty.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\Endian.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\RandomNumberGenerator.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\SingletonT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\BaseDecimaterT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\DecimaterT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\McDecimaterT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\MixedDecimaterT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModAspectRatioT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModEdgeLengthT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModHausdorffT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModProgMeshT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModQuadricT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\JacobiLaplaceSmootherT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\LaplaceSmootherT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\SmootherT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\CompositeT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\RulesT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\CatmullClarkT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite\CompositeT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\conio.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Gnuplot.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\MeshCheckerT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\StripifierT.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Timer.cc" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTManifoldAssistant.cpp" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTOpenMesh.cpp" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTSDFunction.cpp" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTSideView.cpp" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTUtils.cpp" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTViewport.cpp" />
+    <ClCompile Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTViewportManager.cpp" />
+    <ClCompile Include="..\src\ParticleSystem.cpp" />
+    <ClCompile Include="..\src\Spring.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\Config.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\LoopSchemeMaskT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\MathDefs.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\NormalConeT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\Plane3d.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\QuadricT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\VectorT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Geometry\VectorT_inc.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\BinaryHelper.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\IOInstances.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\IOManager.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\MeshIO.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\OFFFormat.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\OMFormat.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\Options.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_binary.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_binary_spec.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_rbo.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_store.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\SR_types.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\StoreRestore.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\exporter\BaseExporter.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\exporter\ExporterT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\importer\BaseImporter.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\importer\ImporterT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\BaseReader.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OBJReader.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OFFReader.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\OMReader.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\PLYReader.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\reader\STLReader.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\BaseWriter.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OBJWriter.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OFFWriter.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\OMWriter.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\PLYWriter.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\STLWriter.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\IO\writer\VTKWriter.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\ArrayItems.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\ArrayKernel.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\AttribKernelT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Attributes.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\BaseKernel.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\BaseMesh.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Casts.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\CirculatorsT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\FinalMeshItemsT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Handles.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\IteratorsT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyConnectivity.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyMesh_ArrayKernelT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\PolyMeshT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Status.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\Traits.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriConnectivity.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriMesh_ArrayKernelT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\TriMeshT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\circulators_header.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\circulators_template.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\footer.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\iterators_header.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Mesh\gen\iterators_template.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\compiler.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\config.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\mostream.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\omstream.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\System\OpenMeshDLLMacros.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\AutoPropertyHandleT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\BaseProperty.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\color_cast.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\Endian.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\GenProg.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\Noncopyable.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\Property.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\PropertyContainer.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\PropertyManager.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\RandomNumberGenerator.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\SingletonT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\vector_cast.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Core\Utils\vector_traits.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\BaseDecimaterT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\CollapseInfoT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\DecimaterT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\McDecimaterT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\MixedDecimaterT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModAspectRatioT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModBaseT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModEdgeLengthT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModHausdorffT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModIndependentSetsT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModNormalDeviationT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModNormalFlippingT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModProgMeshT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModQuadricT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Decimater\ModRoundnessT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Dualizer\meshDualT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\JacobiLaplaceSmootherT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\LaplaceSmootherT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\smooth_mesh.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Smoother\SmootherT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\CompositeT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\CompositeTraits.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\RuleInterfaceT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\RulesT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Adaptive\Composite\Traits.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\CatmullClarkT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\CompositeLoopT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\CompositeSqrt3T.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\LongestEdgeT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\LoopT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\ModifiedButterFlyT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Sqrt3InterpolatingSubdividerLabsikGreinerT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Sqrt3T.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\SubdividerT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite\CompositeT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Subdivider\Uniform\Composite\CompositeTraits.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Config.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\conio.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\GLConstAsString.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Gnuplot.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\HeapT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\MeshCheckerT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\NumLimitsT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\StripifierT.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\TestingFramework.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\OpenMesh\Tools\Utils\Timer.hh" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTManifoldAssistant.h" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTOpenMesh.h" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTSDFunction.h" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTSideView.h" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTUtils.h" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTViewport.h" />
+    <ClInclude Include="..\..\..\Cinder\blocks\Icarus\src\Icarus\NTViewportManager.h" />
+    <ClInclude Include="..\src\Particle.h" />
+    <ClInclude Include="..\src\ParticleSystem.h" />
+    <ClInclude Include="..\src\Spring.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
