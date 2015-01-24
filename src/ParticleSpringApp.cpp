@@ -12,20 +12,26 @@ class ParticleSpringApp : public AppNative {
   public:
 	void setup();
 	void mouseDown( MouseEvent event );	
+	void mouseUp(MouseEvent event);
+	void mouseDrag(MouseEvent event);
 	void update();
 	void draw();
 
 	ParticleSystem mParticleSystem;
 	Vec2f mLeftCorner, mRightCorner;
 	int mRows, mCols;
+	Particle* mDragParticle;
+
 };
 
 void ParticleSpringApp::setup()
 {
+	mDragParticle = nullptr;
+
 	mLeftCorner = Vec2f{ 50.0f, 50.0f };
 	mRightCorner = Vec2f{ getWindowWidth() - 50.0f, 50.0f };
-	mRows = 5;
-	mCols = 4;
+	mRows = 20;
+	mCols = 20;
 
 	auto gap = (mRightCorner.x - mLeftCorner.x) / (mRows - 1);
 
@@ -35,14 +41,14 @@ void ParticleSpringApp::setup()
 			auto x = mLeftCorner.x + (gap*i);
 			auto y = mLeftCorner.y + (gap*j);
 
-			auto* particle = new Particle(Vec2f{ x, y }, 5.0f, 5.0f, .95f);
+			auto* particle = new Particle(Vec2f{ x, y }, 8.0f, 5.0f, .95f);
 			particle->setIsFixed(false);
 			mParticleSystem.addParticle(particle);
 			if ( j!=0){
 				auto partA = mParticleSystem.getParticles()[count];
 				auto partB = mParticleSystem.getParticles()[count-1];
 				auto rest = partA->getPosition().distance(partB->getPosition());
-				auto* spring = new Spring{ partA, partB, rest, 1.0f };
+				auto* spring = new Spring{ partA, partB, rest, 1.15f };
 				mParticleSystem.addSpring(spring);
 
 			}
@@ -61,7 +67,7 @@ void ParticleSpringApp::setup()
 
 			auto rest = partA->getPosition().distance(partB->getPosition());
 
-			auto* spring = new Spring{ partA, partB, rest, 1.0f };
+			auto* spring = new Spring{ partA, partB, rest, 1.15f };
 			mParticleSystem.addSpring(spring);
 		}
 	}
@@ -72,20 +78,22 @@ void ParticleSpringApp::setup()
 
 void ParticleSpringApp::mouseDown( MouseEvent event )
 {
-// 	auto particleA = mParticleSystem.getParticles()[randInt(mParticleSystem.getParticles().size())];
-// 	auto particleB = particleA;
-// 
-// 	while (particleB == particleA){
-// 		particleB = mParticleSystem.getParticles()[randInt(mParticleSystem.getParticles().size())];
-// 	}
-// 
-// 	auto rest = randFloat(100.0f, 200.0f);
-// 	auto strength = 1.0f;
-// 
-// 	Spring* spring = new Spring(particleA, particleB, rest, strength);
-// 	mParticleSystem.addSpring(spring);
+	for (auto*p : mParticleSystem.getParticles()){
+		auto dist = p->getPosition().distance(event.getPos());
+		if (dist < p->getRadius()){
+			mDragParticle = p;
+		}
+	}
+}
+void ParticleSpringApp::mouseUp(MouseEvent event){
+	mDragParticle = nullptr;
 }
 
+void ParticleSpringApp::mouseDrag(MouseEvent event){
+	if (mDragParticle){
+		mDragParticle->setPosition(event.getPos());
+	}
+}
 void ParticleSpringApp::update()
 {
 	mParticleSystem.update();
@@ -94,7 +102,6 @@ void ParticleSpringApp::update()
 	for (auto p : mParticleSystem.getParticles()){
 		p->addForce(gravity);
 	}
-
 
 }
 

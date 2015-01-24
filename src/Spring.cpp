@@ -15,6 +15,8 @@ void Spring::update(){
 	float normDist = (length - mRest) / (length*(invMassA + invMassB))*mStrength;
 	mParticleA->addVelocity(-(delta*normDist*invMassA));
 	mParticleB->addVelocity(delta*normDist*invMassA);
+
+
 }
 
 void Spring::draw()const{

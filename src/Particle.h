@@ -14,7 +14,11 @@ public:
 	void addForce(const ci::Vec2f& vec){ mForces += vec; }
 	const ci::Vec2f& getPosition()const{ return mPosition; }
 	float getMass()const{ return mMass; }
+	float getRadius()const { return mRadius; }
 	void setIsFixed(bool isFixed){ mIsFixed = isFixed; }
+	void setPosition(const ci::Vec2f& vec){ mPosition = vec; }
+
+	bool isFixed()const{ return mIsFixed; }
 private:
 	ci::Vec2f mPosition, mPrevPostion;
 	ci::Vec2f mForces;
