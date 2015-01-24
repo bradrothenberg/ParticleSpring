@@ -16,22 +16,43 @@ class ParticleSpringApp : public AppNative {
 	void draw();
 
 	ParticleSystem mParticleSystem;
+	Vec2f mLeftCorner, mRightCorner;
+	int mRows, mLines;
 };
 
 void ParticleSpringApp::setup()
 {
-	int count = 100;
+	mLeftCorner = Vec2f{ 50.0f, 50.0f };
+	mRightCorner = Vec2f{ getWindowWidth() - 50.0f, 50.0f };
+	mRows = 20;
+	mLines = 15;
 
-	for (auto i = 0; i < count; ++i){
-		auto x = ci::randFloat(0.0f, getWindowWidth());
-		auto y = ci::randFloat(0.0f, getWindowHeight());
+	auto gap = (mRightCorner.x - mLeftCorner.x) / (mRows - 1);
 
-		auto rad = ci::randFloat(5.0f, 15.0f);
-		auto mass = rad; 
-		auto drag = .95f;
+	for (auto i = 0; i < mRows; ++i){
+		for (auto j = 0; j < mLines - 1; ++j){
+			auto x = mLeftCorner.x + (gap*i);
+			auto y = mLeftCorner.y + (gap*j);
 
-		Particle* p = new Particle(Vec2f(x, y), rad, mass, drag);
-		mParticleSystem.addParticle(p);
+			auto* particle = new Particle(Vec2f{ x, y }, 5.0f, 5.0f, .95f);
+			mParticleSystem.addParticle(particle);
+		}
+	}
+
+
+	for (auto i = 0; i < mRows; ++i){
+		for (auto j = 0; j < mLines - 1; ++j){
+			auto indexA = i*mLines + j;
+			auto indexB = i*mLines + j + 1;
+
+			auto partA = mParticleSystem.getParticles()[indexA];
+			auto partB = mParticleSystem.getParticles()[indexB];
+
+			auto rest = partA->getPosition().distance(partB->getPosition());
+
+			auto* spring = new Spring{ partA, partB, rest, 1.0f };
+			mParticleSystem.addSpring(spring);
+		}
 	}
 }
 
